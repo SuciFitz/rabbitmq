@@ -88,7 +88,7 @@ public class RabbitController {
     public CommonResult<Object> topicTest() {
         for (int i = 0; i < 10; i++) {
             topicSender.send(i);
-            ThreadUtil.sleep(1000); 
+            ThreadUtil.sleep(1000);
         }
         return CommonResult.success(null);
     }
